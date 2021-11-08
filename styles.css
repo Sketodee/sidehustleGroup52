@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* , *::before , *::after {
+    box-sizing: border-box;
+}
+
+:root {
+     --bright-blue:  #3829e0;
+     --pale-blue: #e0e8ff;
+     --very-pale-blue: #f5f7ff;
+     --desaturated-blue: #7280a7;
+     --dark-blue: #1f2f56;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+.container { 
+    margin: 0 auto;
+    width: 60%; 
+    max-width: 1000px;
+    margin-top: 4rem;
+    border-radius: 30px;
+    background-color: var(--very-pale-blue);
+}
+
+.hero{
+    margin: 0 auto; 
+    width: 100%;
+}
+
+.hero img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.order-summary {
+    margin: 0 auto; 
+    width: 70%;
+    text-align: center;
+}
+
+.order-summary h1 {
+    font-weight: 900;
+}
+
+.order-summary p {
+    color: var(--desaturated-blue);
+}
+
+.annual-plan {
+    margin: 0 auto; 
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.annual-plan-img {
+    width: 15%;
+}
+
+.annual-plan-price {
+    width: 50%;
+    line-height: 3px;
+    padding-bottom: 6px;
+}
+
+.annual-plan-price .price{
+color: var(--desaturated-blue);
+}
+
+.annual-plan-change {
+    width: 20%;
+}
+
+.annual-plan-change a {
+    color: var(--bright-blue)
+}
+
+.annual-plan-change a:hover {
+    color: var(--desaturated-blue);
+    text-decoration:  none;
+}
+
+.payment {
+    margin: 0 auto;
+    width: 70%;
+    background-color: var(--bright-blue);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0.1rem 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.payment:hover { 
+    background-color: var(--desaturated-blue);
+}
+.cancel-order {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.cancel-order a {
+    text-decoration: none;
+    color: var(--desaturated-blue)
+}
+
+.cancel-order a:hover {
+    color: black
+}
+
+
+@media (max-width: 600px) {
+    
+    .container { 
+       
+        width: 90%; 
+       
+    }
+    
+
+}
